@@ -1,0 +1,140 @@
+---
+title: "A New Tutorial"
+tutorial:
+  id: "setIDHereForAnswerRecording"
+  version: 1.0
+output:
+  learnr::tutorial:
+    css: css/style.css
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE,fig.align = 'center')
+# Installed tutorials can not use functions stored in the R directory
+# like a regular R package. Instead they need to be distributed and 
+# sourced with each tutorial.
+# See R/main.R for code to copy the folder/directory to each tutorial
+source('./www/helper.R')
+
+# #---------------------------------------------
+# # Instructions for storing answers to the tutorials, not particularly useful for packaged tutorials
+# record_answers <- function(tutorial_id, tutorial_version, user_id, event, data) {
+#     cat(file=paste0(getwd(),'/answers.txt'),append=T,
+#         as.numeric(Sys.time()), ".", 
+#         tutorial_id, ".", tutorial_version, ": ", 
+#         user_id, ", ", 
+#         event, ", ", 
+#         data$label, ", ", 
+#         data$answer, ", ", 
+#         data$correct, "\n", sep = "")
+# }
+# options(tutorial.event_recorder = record_answers)
+# #---------------------------------------------
+```
+
+
+<!-- A Note on Printing Lecture and Tutorials:
+Only those topics/elements that have been 'visited' will 
+be printed. So if you haven't altered the UI then output
+connected to that input won't be printed. To properly 
+print to pdf, you need to have the css code below
+Then: Run the document, Open in Browser and adjust all UI elements
+Finally Ctrl+P from within the browser
+-->
+```{css print-tutorial-functionality}
+@media print {
+  @page {size: landscape}
+  h2 {
+        page-break-before: always;
+  }
+  .topicsContainer,
+  .topicActions,
+  .exerciseActions .skip {
+    display: none;
+  }
+  .topics .tutorialTitle,
+  .topics .section.level2,
+  .topics .section.level3:not(.hide) {
+    display: block;
+  }
+  .topics {
+    width: 100%;
+  }
+  .tutorial-exercise, .tutorial-question {
+    page-break-inside: avoid;
+  }
+  .section.level3.done h3 {
+    padding-left: 0;
+    background-image: none;
+  }
+  .topics .showSkip .exerciseActions::before {
+    content: "Topic not yet completed...";
+    font-style: italic;
+  }
+}
+
+```
+## Topic 1
+
+### Exercise 
+
+*Here's a simple exercise with an empty code chunk provided for entering the answer.*
+
+Write the R code required to add two plus two:
+
+```{r two-plus-two, exercise=TRUE}
+
+```
+
+### Exercise with Code
+
+*Here's an exercise with some pre-populated code as well as `exercise.lines = 5` to provide a bit more initial room to work.*
+
+Now write a function that adds any two numbers and then call it:
+
+```{r add-function, exercise=TRUE, exercise.lines = 5}
+add <- function() {
+  
+}
+```
+
+## Topic 2
+
+### Exercise with Hint
+
+*Here's an exercise where the chunk is pre-evaulated via the `exercise.eval` option (so the user can see the default output we'd like them to customize). We also add a "hint" to the correct solution via the chunk immediate below labeled `print-limit-hint`.*
+
+Modify the following code to limit the number of rows printed to 5:
+
+```{r print-limit, exercise=TRUE, exercise.eval=TRUE}
+mtcars
+```
+
+```{r print-limit-hint}
+head(mtcars)
+```
+
+### Quiz
+
+*You can include any number of single or multiple choice questions as a quiz. Use the `question` function to define a question and the `quiz` function for grouping multiple questions together.*
+
+Some questions to verify that you understand the purposes of various base and recommended R packages:
+
+```{r quiz}
+quiz(
+  question("Which package contains functions for installing other R packages?",
+    answer("base"),
+    answer("tools"),
+    answer("utils", correct = TRUE),
+    answer("codetools")
+  ),
+  question("Which of the R packages listed below are used to create plots?",
+    answer("lattice", correct = TRUE),
+    answer("tools"),
+    answer("stats"),
+    answer("grid", correct = TRUE)
+  )
+)
+```

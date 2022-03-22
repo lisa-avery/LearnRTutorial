@@ -1,0 +1,55 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# ExampleTutorial
+
+<!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![CRAN status](https://www.r-pkg.org/badges/version/ExampleTutorial)](https://CRAN.R-project.org/package=ExampleTutorial)
+<!-- badges: end -->
+
+An example package for tutorials delivered through R
+
+## Folder Structure
+
+Tutorials are stored in the inst/tutorials directory. The emptyTutorial directory can be copied and ammended to create a new tutorial.
+
+## Installation
+
+Students can install the current version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("lisa-avery/ExampleTutorial")
+```
+
+## Example
+
+List all the tutorials in the package
+
+```{r}
+#intall.packages('learnr')
+learnr::available_tutorials(package = 'LearnRTutorial')
+```
+
+This is how the tutorials are run from within RStudio 
+
+```{r example, eval=F}
+library(LearnRTutorial)
+learnr::run_tutorial("LecturingWithLearnR", "LearnRTutorial")
+
+```
+
+

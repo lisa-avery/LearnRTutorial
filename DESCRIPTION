@@ -1,0 +1,19 @@
+Package: LearnRTutorial
+Title: An introdcution to lecturing with LearnR with tutorial template
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Lisa",
+           family = "Avery",
+           role = c("aut", "cre"),
+           email = "lisa.avery@uhn.ca",
+           comment = c(ORCID = "0000-0002-8431-5143"))
+Description: A LearnR tutorial detailing some feautres of LearnR, along with a template tutorial.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Depends: 
+    tidyverse
+Imports: 
+    learnr
