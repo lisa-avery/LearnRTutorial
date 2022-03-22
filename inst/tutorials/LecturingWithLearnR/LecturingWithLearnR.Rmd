@@ -119,7 +119,7 @@ This tutorial will give an overview of:
 - Quiz elements
 - Packaging Tutorials
 
-`r emo::ji('question')` There shuold be plenty of` time for questions - please interrupt!
+`r emo::ji('question')` There should be plenty of` time for questions - please interrupt!
 
 ## Background
 
@@ -1048,7 +1048,7 @@ Package can easily be updated and distributed to students via github
 
 This tutorial is in my ExampleTutorial package, available on my [gitHub page](https://github.com/Avery-Lisa/LearnRTutorial#readme) 
 
-You can run the tutorial by installing the package & running the tutorial (instructions on github)
+You can run the tutorial by installing the package & running the tutorial (instructions on git)
 
 ...but better still, download the folder to start quickly developing your own tutorials
 
