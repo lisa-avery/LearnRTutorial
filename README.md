@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# ExampleTutorial
+# Package Information
 
 <!-- badges: start -->
 
@@ -25,7 +25,7 @@ Students can install the current version from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("lisa-avery/ExampleTutorial")
+devtools::install_github("lisa-avery/LearnRTutorial")
 ```
 
 ## Example

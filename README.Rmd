@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# ExampleTutorial
+# Package Information
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
@@ -32,7 +32,7 @@ Students can install the current version from [GitHub](https://github.com/) with
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("lisa-avery/ExampleTutorial")
+devtools::install_github("lisa-avery/LearnRTutorial")
 ```
 
 ## Example
