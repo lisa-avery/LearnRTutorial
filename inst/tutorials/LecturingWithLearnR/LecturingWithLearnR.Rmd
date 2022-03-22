@@ -1046,9 +1046,9 @@ Package can easily be updated and distributed to students via github
 
 ## Download this Tutorial
 
-This tutorial is in my ExampleTutorial package, available on my gitHub page
+This tutorial is in my ExampleTutorial package, available on my [gitHub page](https://github.com/Avery-Lisa/LearnRTutorial#readme) 
 
-You can run the tutorial by installing the package
+You can run the tutorial by installing the package & running the tutorial (instructions on github)
 
 ...but better still, download the folder to start quickly developing your own tutorials
 

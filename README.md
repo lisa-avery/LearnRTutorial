@@ -25,7 +25,7 @@ Students can install the current version from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("lisa-avery/LearnRTutorial")
+devtools::install_github("Avery-Lisa/LearnRTutorial")
 ```
 
 ## Example
